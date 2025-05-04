@@ -320,6 +320,47 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize the birthday question functionality
     initBirthdayQuestion();
+
+    // Initialize the Spotify player toggle for mobile
+    function initSpotifyPlayerToggle() {
+        const musicPlayer = document.getElementById('music-player');
+        const playerToggle = document.querySelector('.player-toggle');
+        
+        if (musicPlayer && playerToggle) {
+            playerToggle.addEventListener('click', function() {
+                musicPlayer.classList.toggle('expanded');
+                
+                // Change the icon based on state
+                this.textContent = musicPlayer.classList.contains('expanded') ? '✕' : '🎵';
+                
+                // Vibrate the device if supported (mobile)
+                if (navigator.vibrate) {
+                    navigator.vibrate(50);
+                }
+            });
+            
+            // Check if it's mobile view
+            function checkMobileView() {
+                if (window.innerWidth <= 480) {
+                    // Make sure it starts collapsed on mobile
+                    musicPlayer.classList.remove('expanded');
+                    playerToggle.textContent = '🎵';
+                } else {
+                    // On larger screens, always show expanded
+                    musicPlayer.classList.add('expanded');
+                }
+            }
+            
+            // Call once on load
+            checkMobileView();
+            
+            // And check whenever window is resized
+            window.addEventListener('resize', checkMobileView);
+        }
+    }
+    
+    // Initialize the Spotify player toggle
+    initSpotifyPlayerToggle();
 });
 
 // Start the birthday celebration

@@ -1174,9 +1174,33 @@ p {
         width: 80%;
     }
     
+    .gallery-container {
+        padding: 10px 0;
+    }
+    
+    .gallery {
+        gap: 15px;
+        padding: 10px;
+    }
+    
     .gallery-item {
         flex: 0 0 250px;
         height: 350px;
+    }
+    
+    .gallery-note {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+    
+    #music-player {
+        width: 280px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    #music-player iframe {
+        height: 250px;
     }
     
     .word {
@@ -1213,12 +1237,74 @@ p {
     #music-player {
         bottom: 10px;
         right: 10px;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+    
+    #music-player.expanded {
         width: 300px;
+        height: 250px;
+        border-radius: 12px;
+        overflow: visible;
+    }
+    
+    #music-player .player-container {
+        width: 300px;
+        height: 250px;
+    }
+    
+    #music-player iframe {
+        height: 250px;
+        transform: translateX(-110px);
+        transition: transform 0.3s ease;
+    }
+    
+    #music-player.expanded iframe {
+        transform: translateX(0);
+    }
+    
+    .player-toggle {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary-color), var(--gradient-end));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 5px 15px rgba(138, 43, 226, 0.5);
+    }
+    
+    .gallery-container {
+        padding: 5px 0;
+    }
+    
+    .gallery {
+        gap: 10px;
+        padding: 5px;
     }
     
     .gallery-item {
         flex: 0 0 200px;
         height: 300px;
+    }
+    
+    .gallery-note {
+        font-size: 1rem;
+        padding: 15px;
+        margin: 20px auto 0;
+    }
+    
+    .caption {
+        padding: 10px;
+        font-size: 0.85rem;
     }
     
     .quote-content p {

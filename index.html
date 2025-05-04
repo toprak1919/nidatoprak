@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May 5 Magic — Happy Birthday, My Love</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Countdown Section (shown only before midnight) -->
+    <section id="countdown" class="section">
+        <div class="container">
+            <h2>Countdown to Your Special Day</h2>
+            <div id="timer" class="gradient-timer">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="tap-container">
+                <span id="tap-next" class="tap-text">tap tap</span>
+            </div>
+            
+            <!-- Early access password form -->
+            <div class="password-container">
+                <input type="password" id="password-field" placeholder="Enter password to celebrate early" class="password-field">
+                <button id="unlock-btn" class="btn unlock-btn">Unlock</button>
+            </div>
+            
+            <div id="micro-lines" class="fade-cross">
+                <p class="micro-line">Every heartbeat brings us closer to celebrating you.</p>
+                <p class="micro-line">Distance can't stall this love-powered clock.</p>
+                <p class="micro-line">Bayreuth is beaming birthday vibes straight to Ankara.</p>
+                <p class="micro-line">The world pauses to honor you—almost there.</p>
+                <p class="micro-line">Loading birthday magic… please hold your excitement.</p>
+                <p class="micro-line">T-minus [X] seconds until your day begins.</p>
+                <p class="micro-line">2 004 km apart, 0 km in my heart.</p>
+                <p class="micro-line">Final countdown for the queen of my universe.</p>
+                <p class="micro-line">Chronos counts, but Eros conquers.</p>
+                <p class="micro-line">Every petal points toward you, my sunflower.</p>
+                <p class="micro-line">Could this day BE any more special?</p>
+                <p class="micro-line">May 5 officially belongs to you—soon!</p>
+                <p class="micro-line">In a heartbeat I'd cross every nation for you.</p>
+                <p class="micro-line">Episode ★★★★★: Starring you, Happy Birthday!</p>
+                <p class="micro-line">Anticipation level: Maximum. Birthday magic incoming.</p>
+                <p class="micro-line">Soon, the calendar concedes: it's your day.</p>
+                <p class="micro-line">Patience is hard, but you're worth every millisecond.</p>
+                <p class="micro-line">The spirit world is gathering to honor you.</p>
+                <p class="micro-line">Wait for it… legendary love begins anew.</p>
+                <p class="micro-line">One sun, two cities, infinite us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Birthday Greeting -->
+    <section id="hero" class="section">
+        <div id="confetti-canvas" style="pointer-events: none;"></div>
+        <div class="container">
+            <h1 class="birthday-title">Happy Birthday, Sweetheart!</h1>
+            <p class="birthday-subtitle">Midnight in Ankara—our favorite girl turns another year more beautiful.</p>
+            <div id="cake">
+                <!-- Cake with candles will be inserted here by JS -->
+            </div>
+            <button id="blow-candles" class="btn">Blow out the candles</button>
+        </div>
+    </section>
+
+    <!-- Digital Gift Wrap Transition -->
+    <section id="gift-wrap" class="section">
+        <div class="ribbon top"></div>
+        <div class="ribbon right"></div>
+        <div class="ribbon bottom"></div>
+        <div class="ribbon left"></div>
+    </section>
+
+    <!-- Memory Lane -->
+    <section id="memory-lane" class="section">
+        <div class="container">
+            <h2>Nida: Every Version of You I Love</h2>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.08.jpeg')"></div>
+                        <div class="caption"><strong>Nida</strong>, your smile outshines the brightest star in the universe.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.08 (1).jpeg')"></div>
+                        <div class="caption">Every moment with you feels like a beautiful dream, <strong>Nida</strong>. I never want to wake up.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.09.jpeg')"></div>
+                        <div class="caption"><strong>Nida</strong>, your eyes hold the wonders of the universe and the secrets of my heart.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.09 (1).jpeg')"></div>
+                        <div class="caption">In your laughter, <strong>Nida</strong>, I've found my favorite melody that plays in my heart forever.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.09 (2).jpeg')"></div>
+                        <div class="caption"><strong>Nida</strong>, your beauty comes not just from your face, but from the beautiful soul that shines through.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.09 (3).jpeg')"></div>
+                        <div class="caption">Distance may separate our bodies, <strong>Nida</strong>, but nothing can separate our hearts.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="photo" style="background-image: url('assets/images/WhatsApp Image 2025-05-04 at 19.23.09 (4).jpeg')"></div>
+                        <div class="caption"><strong>Nida</strong>, if I had to choose between breathing and loving you, I would use my last breath to say "I love you."</div>
+                    </div>
+                </div>
+            </div>
+            <p class="gallery-note">Every photo captures a moment, but none can capture the depth of my love for you, <strong>Nida</strong>. I am in love with every version of you - past, present, and future. <strong>Nida</strong>, you are my greatest blessing.</p>
+        </div>
+    </section>
+
+    <!-- Sunflower Petal Garden -->
+    <section id="sunflower-garden" class="section">
+        <div id="petals-container"></div>
+        <div class="container">
+            <h2>Tap to Bloom Sunflowers</h2>
+            <p>One for every smile you give tonight.</p>
+        </div>
+    </section>
+
+    <!-- Fandom Birthday Love Notes -->
+    <section id="love-notes" class="section">
+        <div class="container">
+            <h2>Birthday Love Notes</h2>
+            <div class="masonry-grid">
+                <div class="note-card avatar">
+                    <p>"In a heartbeat I'd cross every nation with a birthday cake."</p>
+                    <span class="author">– Aang</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card friends">
+                    <p>"Could we BE any more in love on your birthday?"</p>
+                    <span class="author">– Chandler</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card himym">
+                    <p>"I'd wait the extra 45 days for this day again."</p>
+                    <span class="author">– Ted</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card black-mirror">
+                    <p>"This episode of life is a perfect five stars—happy birthday!"</p>
+                    <span class="author">– Black Mirror</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card avatar">
+                    <p>"I'd invent a hundred new boomerang tricks just to make your birthday unforgettable."</p>
+                    <span class="author">– Sokka</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card avatar">
+                    <p>"My world feels whole when I celebrate with you—today, my honor is your happiness."</p>
+                    <span class="author">– Zuko</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card avatar">
+                    <p>"I can't see you, but I feel your joy radiating—happy birthday, earth-shaker of my heart."</p>
+                    <span class="author">– Toph</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card avatar">
+                    <p>"A warrior's strength is nothing compared to the power of celebrating you today."</p>
+                    <span class="author">– Suki</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card friends">
+                    <p>"Pivot… your birthday happiness right into my arms. Happy Birthday!"</p>
+                    <span class="author">– Ross Geller</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card friends">
+                    <p>"Smelly cat, smelly cat—just kidding. You smell like sunshine. Happy Birthday!"</p>
+                    <span class="author">– Phoebe Buffay</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card friends">
+                    <p>"Look at you—another year more amazing. Now go treat yourself (and me to a selfie)."</p>
+                    <span class="author">– Rachel Green</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card friends">
+                    <p>"I'd give up Central Perk's coffee for one smile from you today."</p>
+                    <span class="author">– Gunther</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card himym">
+                    <p>"I've planned every detail of this birthday—because you're my masterpiece."</p>
+                    <span class="author">– Lily Aldrin</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card himym">
+                    <p>"Even in Canada's coldest winter, my heart's warm celebrating you."</p>
+                    <span class="author">– Robin Scherbatsky</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card himym">
+                    <p>"I'd write you a hundred songs—happy birthday, my perfect melody."</p>
+                    <span class="author">– Marshall Eriksen</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                <div class="note-card himym">
+                    <p>"Suit up… your birthday is going to be legen—wait for it—dary!"</p>
+                    <span class="author">– Barney Stinson</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+                
+      
+                <div class="note-card black-mirror">
+                    <p>"Episode entitled 'Your Birthday' now streaming—starring you, my forever love."</p>
+                    <span class="author">– Netflix</span>
+                    <button class="heart-btn">❤️</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- You Are... Whisper Section -->
+    <section id="whisper" class="section">
+        <div class="purple-mist"></div>
+        <div class="container">
+            <div class="whisper-words">
+                <span class="word" data-index="0">the most beautiful</span>
+                <span class="word" data-index="1">caring</span>
+                <span class="word" data-index="2">loving</span>
+                <span class="word" data-index="3">person I know.</span>
+                <span class="word final" data-index="4">And today, you're the birthday queen.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Quotes -->
+    <section id="quotes" class="section">
+        <div class="container">
+            <h2>For Your Birthday</h2>
+            <div class="quotes-carousel">
+                <div class="quote-slide active">
+                    <div class="quote-content">
+                        <p>"120 years together starts with your birthday today."</p>
+                        <span class="author">– Toprak ❤️</span>
+                    </div>
+                </div>
+                <div class="quote-slide">
+                    <div class="quote-content">
+                        <p>"Your laugh is my favorite melody—may it echo forever in my heart."</p>
+                        <span class="author">– Toprak ❤️</span>
+                    </div>
+                </div>
+                <div class="quote-slide">
+                    <div class="quote-content">
+                        <p>"I fell in love with every part of you—today I celebrate them all."</p>
+                        <span class="author">– Toprak ❤️</span>
+                    </div>
+                </div>
+                <div class="quote-slide">
+                    <div class="quote-content">
+                        <p>"Your birthday marks the first page of my favorite endless novel."</p>
+                        <span class="author">– Toprak ❤️</span>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev-btn">❮</button>
+                    <div class="carousel-dots"></div>
+                    <button class="next-btn">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 120-Year Journey Timeline -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2>Our 120-Year Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">Year 1</div>
+                    <div class="content">First shared sunrise—our forever begins.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 20</div>
+                    <div class="content">AI-curated mixtape implants your favorite songs directly into our neural band—no earbuds needed.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 33</div>
+                    <div class="content">Still debating whose coffee(yes i will start drinking in the future) reigns supreme—now brewed by our robot barista on Mars colony mornings.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 45</div>
+                    <div class="content">Holographic holiday: teleporting our life-sized avatars to Athens for a sunset walk in virtual reality (but feeling every breeze for real! ).</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 55</div>
+                    <div class="content">Telling our grandkids tales in German and Turkish lullabies—projected as 4D holograms floating over their cribs.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 62</div>
+                    <div class="content">Out-philosophizing each other while our personal AI Socrates challenges us in an ever-evolving VR amphitheater.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 75</div>
+                    <div class="content">Our purple-and-gold anniversary, celebrated aboard a solar-sail yacht drifting through Saturn's rings—sunflowers floating in zero-G.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 88</div>
+                    <div class="content">Racing quantum-charged mobility scooters on the moon's surface (yours painted violet, of course), with Earth rising on the horizon.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 101</div>
+                    <div class="content">Sunflowers delivered by drone—self-assembling into living sculptures shaped like our initials, photosynthesizing under Martian skies.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 110</div>
+                    <div class="content">Memory-archive interface lets us re-experience every precious moment together—complete with scented atmospheres.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">Year 120</div>
+                    <div class="content">Still arguing over who makes the best gözleme—both of us winning, served by our household nanobot chef with sunlight-grown flour.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shared Sunrise -->
+    <section id="sunrise" class="section">
+        <div class="container">
+            <h2>Shared Sunrise</h2>
+            <button id="watch-sunrise" class="btn">Watch the same sun rise</button>
+            <div class="sunrise-feeds hidden">
+                <div class="feed">
+                    <h3>Bayreuth Dawn</h3>
+                    <div class="feed-placeholder"></div>
+                </div>
+                <div class="feed">
+                    <h3>Ankara Dawn</h3>
+                    <div class="feed-placeholder"></div>
+                </div>
+                <div class="sunflower-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spotify Playlist -->
+    <div id="music-player">
+        <div class="player-container">
+            <div class="heart-pulse"></div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EJwCtc20UpLCh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Final Video Toast -->
+    <section id="final-reveal" class="section">
+        <div class="container">
+            <h2>Birthday Question</h2>
+            <div class="birthday-question">
+                <p class="question-text">Would you want to celebrate your next birthdays with me?</p>
+                <div class="answer-buttons">
+                    <button id="yes-btn" class="btn yes-btn">Yes</button>
+                    <button id="no-btn" class="btn no-btn">No</button>
+                </div>
+            </div>
+            
+            <div id="celebration-animation" class="hidden">
+                <h3>You've made me the happiest person!</h3>
+                <button id="video-toast" class="glow-btn">Turn around… your birthday surprise awaits.</button>
+                <p class="tooltip">We shall spend more time on Google Meets and watch more series together!</p>
+            </div>
+            
+            <div class="future-plans">
+                <h3>Our Plans</h3>
+                <ul class="plans-list">
+                    <li>More Google Meets dates</li>
+                    <li>Watch more series together</li>
+                    <li>Virtual movie nights</li>
+                    <li>Share sunrises and sunsets</li>
+                </ul>
+            </div>
+            
+            <button id="add-more-stuff" class="btn add-more-btn">Add More Stuff</button>
+        </div>
+    </section>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/sunflowers.js"></script>
+</body>
+</html> 

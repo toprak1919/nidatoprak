@@ -1,0 +1,44 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cake plate -->
+    <ellipse cx="150" cy="180" rx="120" ry="15" fill="#e6e6e6"/>
+    
+    <!-- Bottom layer -->
+    <rect x="50" y="130" width="200" height="50" rx="5" ry="5" fill="#f5a8c0"/>
+    <rect x="50" y="130" width="200" height="10" fill="#f283a5"/>
+    
+    <!-- Middle layer -->
+    <rect x="70" y="90" width="160" height="40" rx="5" ry="5" fill="#ba55d3"/>
+    <rect x="70" y="90" width="160" height="10" fill="#a040a0"/>
+    
+    <!-- Top layer -->
+    <rect x="90" y="50" width="120" height="40" rx="5" ry="5" fill="#8a2be2"/>
+    <rect x="90" y="50" width="120" height="10" fill="#6a0dad"/>
+    
+    <!-- Decorations -->
+    <circle cx="110" cy="70" r="5" fill="#ffc107"/>
+    <circle cx="150" cy="70" r="5" fill="#ffc107"/>
+    <circle cx="190" cy="70" r="5" fill="#ffc107"/>
+    
+    <circle cx="100" cy="110" r="5" fill="#ffc107"/>
+    <circle cx="140" cy="110" r="5" fill="#ffc107"/>
+    <circle cx="180" cy="110" r="5" fill="#ffc107"/>
+    <circle cx="220" cy="110" r="5" fill="#ffc107"/>
+    
+    <circle cx="90" cy="150" r="5" fill="#ffc107"/>
+    <circle cx="130" cy="150" r="5" fill="#ffc107"/>
+    <circle cx="170" cy="150" r="5" fill="#ffc107"/>
+    <circle cx="210" cy="150" r="5" fill="#ffc107"/>
+    <circle cx="250" cy="150" r="5" fill="#ffc107"/>
+    
+    <!-- Candle positions (for JavaScript to add) -->
+    <circle cx="100" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="130" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="150" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="170" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="200" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="115" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="145" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="175" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="185" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+    <circle cx="155" cy="50" r="2" fill="none" stroke="#000" stroke-dasharray="2,2"/>
+</svg> 
